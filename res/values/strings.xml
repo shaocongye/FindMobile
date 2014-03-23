@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">听话</string>
+    
+    <string name="hello">Where is my Mobile!</string>
+    <string name="app_name">听话</string>
+    <string name="title">  </string>
+
+	<string name="performance_text">0.00 seconds 0.00 xRT</string>
+    
+</resources>

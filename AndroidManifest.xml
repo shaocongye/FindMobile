@@ -1,0 +1,47 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.touchthink.obedient"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="15" />
+    
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"> </uses-permission>   
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>   
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+         >
+        <activity
+            android:name="com.touchthink.obedient.Appstart"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Anim_style2" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.touchthink.obedient.WhatsnewDoor" android:theme="@style/Anim_style2" />
+        <activity android:name="com.touchthink.obedient.MainActivity" android:theme="@style/Anim_style2" />
+        <activity android:name="com.touchthink.obedient.Login"  android:theme="@android:style/Theme.NoTitleBar" />        
+        <activity android:name="com.touchthink.obedient.Welcome"  android:theme="@style/Anim_style2"  />
+        <activity android:name="com.touchthink.obedient.Whatsnew"  android:theme="@style/Anim_style2" />
+        <activity android:name="com.touchthink.obedient.ChatActivity"  android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name="com.touchthink.obedient.ShakeActivity"  android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name="com.touchthink.obedient.InfoXiaohei"  android:theme="@android:style/Theme.NoTitleBar" />
+        
+        <activity android:name="Exit" android:theme="@style/MyDialogStyle" />        
+        <activity android:name="ExitFromSettings" android:theme="@style/MyDialogStyleBottom" /> 
+        <activity android:name="InfoXiaoheiHead" android:theme="@style/HeadScale" />
+        <activity android:name="LoadingActivity" android:theme="@style/MyDialogStyle" />             
+        <activity android:name="MainTopRightDialog" android:theme="@style/MyDialogStyleTop" /> 
+    </application>
+
+</manifest>
